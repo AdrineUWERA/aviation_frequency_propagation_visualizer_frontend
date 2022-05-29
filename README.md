@@ -28,6 +28,41 @@ To add a reciver, I create a form. By filling and submitting the form, the provi
 ## How to run the codes locally
 
 
+### Installation
+
+1. Clone this repository
+
+2. Install server dependencies
+    ```
+    $ cd backend
+    $ npm install
+    ```
+
+3. Install client dependencies
+    ```
+    $ cd frontend
+    $ npm install
+    Note: Make sure that you have installed 'nodemon' as global package.
+    ```
+
+### Run the app
+
+1. Start the server
+    ```
+    $ cd backend
+    $ npm start
+    ```
+
+2. Start the client
+    ```
+    $ cd frontend
+    $ npm start
+    ```
+
+3. Browse to `http://localhost:3000/`
+4. For the apis: `http://localhost:5000/`
+
+
 
 
 
