@@ -29,7 +29,7 @@ function Map() {
   const [receivers, setReceivers] = useState([]);
 
   const fecthReceivers = async() => {
-    await fetch("http://localhost:5000/receivers", {
+    await fetch("https://aviation-f-propagation-be.herokuapp.com/receivers", {
             method: "GET"
         }).then(res => res.json())
             .then((data) => {
@@ -104,7 +104,7 @@ export default function App() {
   const [receivers, setReceivers] = useState([]);
 
   const fecthReceivers = async() => {
-    await fetch("http://localhost:5000/receivers", {
+    await fetch("https://aviation-f-propagation-be.herokuapp.com/receivers", {
             method: "GET"
         }).then(res => res.json())
             .then((data) => {
