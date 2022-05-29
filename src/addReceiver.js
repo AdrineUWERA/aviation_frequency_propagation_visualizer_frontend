@@ -9,7 +9,7 @@ function AddReceiver() {
         e.preventDefault();
         const receiver = { latitude, longitude, coverage };
         console.log(receiver); 
-        await fetch("http://localhost:5000/receivers", {
+        await fetch("https://aviation-f-propagation-be.herokuapp.com/receivers", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

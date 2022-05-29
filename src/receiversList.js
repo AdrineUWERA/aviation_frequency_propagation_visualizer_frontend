@@ -2,7 +2,7 @@ import React from "react";
 
 const ReceiverList = ({receivers}) => { 
     const handleDelete = async (id) => {
-        await fetch(`http://localhost:5000/receivers/${id}`, {
+        await fetch(`https://aviation-f-propagation-be.herokuapp.com/receivers${id}`, {
             method: "DELETE"
         }).then(res => res.json())
             .then((data) => {

@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Aviation Frequency Propagation Simulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Solution description
 
-## Available Scripts
+This application is built using:
 
-In the project directory, you can run:
+### FRONTEND:
+ 1. [react](https://reactjs.org/docs/getting-started.html) 
+ 2. [bootstrap](https://www.bing.com/search?q=bootstrap+documentation&qs=n&form=QBRE&sp=-1&pq=bootstra+documentation&sc=8-22&sk=&cvid=99EE175C3F7C4E84895053AE3D03E467) 
+ 3. [Google maps API](https://www.bing.com/search?q=google+maps+api&qs=n&form=QBRE&sp=-1&pq=&sc=0-0&sk=&cvid=CFA6A224C25A4BB4A143C0D0EEFBB4F6) 
 
-### `npm start`
+### BACKEND:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. [Node js](https://nodejs.org/en/docs/)
+2. [MongoDB](https://www.mongodb.com/atlas)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Functionalities:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Add and delete a receiver.
+2. Display a list of all receivers.
+3. Display the receivers and their coverage on google maps.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Summary of how the application functions
+To add a reciver, I create a form. By filling and submitting the form, the provided data (latitude, longitude, and coverage) will get sent to the backend where it gets saved into the database (MongoDB). The added receiver gets added to the list of receivers and also diplayed on the google map. On the map, a receiver is represented by a [signal icon](https://www.bing.com/images/search?view=detailV2&ccid=G2ObvHXO&id=2B6464208FB4D7BC6E4B8DC3E93E3E9622DF2182&thid=OIP.G2ObvHXOE6trXvQlPRvMbwHaHZ&mediaurl=https%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_440933.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.1b639bbc75ce13ab6b5ef4253d1bcc6f%3frik%3dgiHfIpY%252bPunDjQ%26pid%3dImgRaw%26r%3d0&exph=978&expw=980&q=signal+icon&simid=608039366551471203&FORM=IRPRST&ck=520963241A3DC6CA9383009308A348E1&selectedIndex=0&ajaxhist=0&ajaxserp=0), and the coverage is represented by a circle with the radius specified. The coverage circle is centered at the latitude and longitude of the receiver.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to run the codes locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
